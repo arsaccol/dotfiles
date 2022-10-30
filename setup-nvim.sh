@@ -5,7 +5,7 @@ if [ $(id -g) -eq 0 ];
     exit
 fi
 
-
+mkdir -p downloads
 neovim_version="v0.8.0"
 neovim_dl_url="https://github.com/neovim/neovim/releases/download/$neovim_version/nvim-linux64.deb"
 neovim_dl_output="./downloads/nvim.deb"
@@ -14,7 +14,7 @@ echo "Output file: " $neovim_dl_output
 
 
 echo "Downloading Neovim..."
-wget -O $neovim_dl_output $neovim_dl_url 
+wget -O $neovim_dl_output $neovim_dl_url &&
 echo "Neovim downloaded!"
 
 echo "Installing Neovim..."
@@ -47,7 +47,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "vim-plug installed!"
 
 echo "Installing Node.js for language server"
-curl -sL install-node.vercel.app/lts | bash &&
+curl -sL install-node.vercel.app/lts | sudo bash &&
 echo "Node.js installed!"
 
 echo "Setting up Neovim plugins"
