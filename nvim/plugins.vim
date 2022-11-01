@@ -16,6 +16,7 @@ Plug 'simrat39/symbols-outline.nvim'
 Plug 'andweeb/presence.nvim'
 Plug 'welle/context.vim'
 Plug 'cdelledonne/vim-cmake'
+Plug 'xiyaowong/nvim-transparent'
 
 
 call plug#end()
