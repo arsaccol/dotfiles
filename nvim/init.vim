@@ -91,7 +91,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "let g:tokyonight_style = "day"
 let g:tokyonight_style = "night" " doesn't actually work with transparent background
 "let g:tokyonight_transparent = 0
-let g:tokyonight_transparent = 1
+"let g:tokyonight_transparent = 1
+
+let g:transparent_enabled = v:true
 colorscheme tokyonight
 
 
