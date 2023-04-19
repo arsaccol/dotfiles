@@ -16,7 +16,7 @@ Run the tmux setup file
 `./setup-tmux.sh`
 
 Run the Neovim setup file
-`setup-tmux.sh`
+`./setup-nvim.sh`
 
 
 You should probably run this as soon as you install Ubuntu Server in your VM or wherever you install it. 
