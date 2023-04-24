@@ -1,8 +1,9 @@
 source ~/.config/nvim/plugins.vim
 
-let mapleader = "\\"
-"let mapleader = ","
+"let mapleader = '\'
+let mapleader = ","
 
+set encoding=UTF-8
 set noswapfile
 set autoindent
 set smartindent
@@ -82,6 +83,17 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 :nnoremap evrc :vsp ~/.config/nvim/init.vim<CR>
 :nnoremap srcv :source ~/.config/nvim/init.vim<CR>
 
+" Go to tab by number
+:noremap <leader>1 1gt
+:noremap <leader>2 2gt
+:noremap <leader>3 3gt
+:noremap <leader>4 4gt
+:noremap <leader>5 5gt
+:noremap <leader>6 6gt
+:noremap <leader>7 7gt
+:noremap <leader>8 8gt
+:noremap <leader>9 9gt
+
 
 " See date and time in status bar
 " set ruler
@@ -99,3 +111,4 @@ colorscheme tokyonight
 
 
 set encoding=utf-8
+set nofixendofline

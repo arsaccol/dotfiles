@@ -7,7 +7,9 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'rust-lang/rust.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'github/copilot.vim'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' | 
+            \ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'folke/tokyonight.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -17,6 +19,8 @@ Plug 'andweeb/presence.nvim'
 Plug 'welle/context.vim'
 Plug 'cdelledonne/vim-cmake'
 Plug 'xiyaowong/nvim-transparent'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'tikhomirov/vim-glsl'
 
 
 call plug#end()
@@ -41,12 +45,12 @@ set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
+"if has("patch-8.1.1564")
+"  " Recently vim can merge signcolumn and number column into one
+"  set signcolumn=number
+"else
   set signcolumn=yes
-endif
+"endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
