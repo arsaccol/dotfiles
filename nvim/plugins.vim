@@ -21,6 +21,7 @@ Plug 'cdelledonne/vim-cmake'
 Plug 'xiyaowong/nvim-transparent'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tikhomirov/vim-glsl'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 
 call plug#end()

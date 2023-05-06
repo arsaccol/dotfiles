@@ -24,7 +24,7 @@ syntax on
 set rnu
 set number
 set showmatch
-"set cursorline
+set cursorline
 
 set comments=s1:/*,mb:\ *,elx:\ */
 set foldmethod=syntax
