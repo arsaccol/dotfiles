@@ -22,6 +22,7 @@ Plug 'xiyaowong/nvim-transparent'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tikhomirov/vim-glsl'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'mfussenegger/nvim-dap'
 
 
 call plug#end()
@@ -194,4 +195,12 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+if exists(':Telescope')
+    " Set file_ignore_patterns to ignore node_modules directory
+    let g:telescope_defaults = {
+        \ 'file_ignore_patterns': ['node_modules/*', 'package-lock.json'],
+        \ 'hidden': v:true
+        \}
+endif
 
