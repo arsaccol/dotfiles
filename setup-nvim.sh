@@ -6,7 +6,7 @@ if [ $(id -g) -eq 0 ];
 fi
 
 mkdir -p downloads
-neovim_version="v0.8.3"
+neovim_version="v0.9.1"
 neovim_dl_url="https://github.com/neovim/neovim/releases/download/$neovim_version/nvim-linux64.deb"
 neovim_dl_output="./downloads/nvim.deb"
 echo "Download URL: " $neovim_dl_url

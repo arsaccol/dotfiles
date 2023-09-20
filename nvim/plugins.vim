@@ -23,6 +23,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'tikhomirov/vim-glsl'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-lualine/lualine.nvim'
 
 
 call plug#end()
@@ -199,8 +200,10 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 if exists(':Telescope')
     " Set file_ignore_patterns to ignore node_modules directory
     let g:telescope_defaults = {
-        \ 'file_ignore_patterns': ['node_modules/*', 'package-lock.json'],
+        \ 'file_ignore_patterns': ['node_modules/*', '*package-lock.json*'],
         \ 'hidden': v:true
         \}
 endif
 
+" detect typescript files as typescript
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript

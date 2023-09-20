@@ -1,8 +1,10 @@
+let mapleader = ","
+
 source ~/.config/nvim/plugins.vim
 
 "let mapleader = '\'
-let mapleader = ","
 
+set ic
 set encoding=UTF-8
 set noswapfile
 set autoindent
@@ -94,6 +96,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 :noremap <leader>8 8gt
 :noremap <leader>9 9gt
 
+" reload buffers that may have changed externally
+:nnoremap <leader>r :checktime <CR> 
 
 " See date and time in status bar
 " set ruler
@@ -105,7 +109,7 @@ let g:tokyonight_style = "night" " doesn't actually work with transparent backgr
 "let g:tokyonight_transparent = 0
 "let g:tokyonight_transparent = 1
 
-let g:transparent_enabled = v:true
+let g:transparent_enabled = v:false
 colorscheme tokyonight
 
 
