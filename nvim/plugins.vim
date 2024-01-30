@@ -24,6 +24,7 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'mfussenegger/nvim-dap'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'APZelos/blamer.nvim'
 
 
 call plug#end()
@@ -207,3 +208,5 @@ endif
 
 " detect typescript files as typescript
 autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+
+let g:blamer_enabled = 1
