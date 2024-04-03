@@ -109,9 +109,8 @@ let g:tokyonight_style = "night" " doesn't actually work with transparent backgr
 "let g:tokyonight_transparent = 0
 "let g:tokyonight_transparent = 1
 
-let g:transparent_enabled = v:false
+let g:transparent_enabled = v:true
 colorscheme tokyonight
-
 
 
 set encoding=utf-8
