@@ -16,7 +16,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'andweeb/presence.nvim'
-Plug 'welle/context.vim'
+Plug 'wellle/context.vim'
 Plug 'cdelledonne/vim-cmake'
 Plug 'xiyaowong/nvim-transparent'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
