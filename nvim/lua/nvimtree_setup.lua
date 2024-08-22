@@ -12,4 +12,5 @@ nvim_tree.setup()
 
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<R>', ':NvimTreeRefresh<CR>')
+vim.keymap.set('n', '<leader>n', ':NvimTreeFocus<CR>')
 

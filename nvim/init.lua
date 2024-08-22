@@ -8,6 +8,7 @@ require 'lspconfig_setup'
 require 'completions'
 require 'nvimtree_setup'
 require 'aerial_setup'
+require 'tokyo_night_setup'
 
 vim.o.ic = true
 vim.o.encoding = 'UTF-8'
@@ -33,8 +34,8 @@ vim.o.foldmethod = "syntax"
 
 
 
--- vim.g.transparent_enabled = true
-vim.cmd 'colorscheme tokyonight'
+vim.g.transparent_enabled = false
+vim.cmd[[colorscheme tokyonight]]
 
 vim.g.blamer_enabled = true
 
@@ -46,3 +47,19 @@ vim.o.updatetime=300
 vim.o.signcolumn = 'yes'
 
 vim.o.fixendofline = false
+
+vim.diagnostic.config({
+    -- virtual_text = false,
+    float = {
+        focusable = false,
+        style = "minimal",
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
+    },
+    signs = true,
+    underline = true,
+    update_in_insert = true,
+    severity_sort = false,
+})

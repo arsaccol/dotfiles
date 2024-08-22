@@ -32,4 +32,6 @@ vim.keymap.set('n', '<leader>9', '9gt')
 vim.keymap.set('n', 'evrc', ':vsp ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', 'srcv', ':source ~/.config/nvim/init.lua<CR>')
 
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
+vim.keymap.set('n', '<C-c>', ':q <CR>')
