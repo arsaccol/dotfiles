@@ -1,11 +1,11 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver'}
+  ensure_installed = {'ts_ls'}
 })
 
 local lspconfig = require('lspconfig')
 lspconfig.lua_ls.setup({})
-lspconfig.tsserver.setup({})
+lspconfig.ts_ls.setup({})
 lspconfig.rust_analyzer.setup({
     settings = {
     ['rust-analyzer'] = {},
