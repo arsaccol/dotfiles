@@ -9,6 +9,8 @@ require 'completions'
 require 'nvimtree_setup'
 require 'aerial_setup'
 require 'tokyo_night_setup'
+require 'gen_nvim_setup'
+require 'syntax'
 
 vim.o.ic = true
 vim.o.encoding = 'UTF-8'
@@ -19,9 +21,9 @@ vim.o.smartindent = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = 4
+vim.o.expandtab = true
+-- vim.o.tabstop = 2
+vim.o.shiftwidth = 2
 vim.o.wrap = false
 
 
