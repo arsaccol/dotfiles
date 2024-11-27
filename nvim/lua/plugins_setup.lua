@@ -36,5 +36,6 @@ vim.call('plug#begin')
   ]]
 
   Plug 'stevearc/aerial.nvim'
+  Plug 'David-Kunz/gen.nvim'
 
 vim.call('plug#end')
