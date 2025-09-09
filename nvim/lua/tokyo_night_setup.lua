@@ -6,7 +6,7 @@ require("tokyonight").setup({
   ---- or leave it empty to use the default settings
   --style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
   --light_style = "day", -- The theme is used when the background is set to light
-  --transparent = false, -- Enable this to disable setting the background color
+  transparent = false, -- Enable this to disable setting the background color
   --terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
   --styles = {
   --  -- Style to be applied to different syntax groups
@@ -28,7 +28,9 @@ require("tokyonight").setup({
   ----- You can override specific color groups to use other groups or a hex color
   ----- function will be called with a ColorScheme table
   -----@param colors ColorScheme
-  --on_colors = function(colors) end,
+  on_colors = function(colors)
+    colors.comment = "#aaaaaa"
+  end,
 
   ----- You can override specific highlights to use other groups or a hex color
   ----- function will be called with a Highlights and ColorScheme table

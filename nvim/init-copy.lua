@@ -10,8 +10,6 @@ require 'nvimtree_setup'
 require 'aerial_setup'
 require 'tokyo_night_setup'
 require 'gen_nvim_setup'
-require 'avante_setup'
--- require 'syntax'
 
 vim.o.ic = true
 vim.o.encoding = 'UTF-8'
@@ -23,9 +21,8 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 
 vim.o.expandtab = true
+-- vim.o.tabstop = 2
 vim.o.shiftwidth = 2
-vim.o.tabstop = 2
-vim.o.softtabstop = 2
 vim.o.wrap = false
 
 
@@ -38,7 +35,7 @@ vim.o.foldmethod = "syntax"
 
 
 
-vim.g.transparent_enabled = false
+vim.g.transparent_enabled = true
 vim.cmd[[colorscheme tokyonight]]
 
 vim.g.blamer_enabled = true

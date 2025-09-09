@@ -38,4 +38,15 @@ vim.call('plug#begin')
   Plug 'stevearc/aerial.nvim'
   Plug 'David-Kunz/gen.nvim'
 
+    -- Required by avante.nvim
+  Plug 'stevearc/dressing.nvim'
+  Plug 'MunifTanjim/nui.nvim'
+  Plug 'MeanderingProgrammer/render-markdown.nvim'
+  vim.cmd [[
+    Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
+  ]]
+  -- Optional deps for avante.nvim
+  Plug 'HakonHarnes/img-clip.nvim'
+  Plug 'zbirenbaum/copilot.lua'
+
 vim.call('plug#end')
