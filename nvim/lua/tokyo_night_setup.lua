@@ -1,5 +1,6 @@
 require("tokyonight").setup({
-    style = "night",
+    --style = "night",
+    style = "day",
     
 
   ---- your configuration comes here

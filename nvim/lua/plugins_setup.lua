@@ -49,4 +49,8 @@ vim.call('plug#begin')
   Plug 'HakonHarnes/img-clip.nvim'
   Plug 'zbirenbaum/copilot.lua'
 
+
+  -- AI used at work
+  Plug 'augmentcode/augment.vim'
+
 vim.call('plug#end')

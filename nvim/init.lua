@@ -10,7 +10,9 @@ require 'nvimtree_setup'
 require 'aerial_setup'
 require 'tokyo_night_setup'
 require 'gen_nvim_setup'
-require 'avante_setup'
+require 'augmentcode_setup'
+
+-- require 'avante_setup'
 -- require 'syntax'
 
 vim.o.ic = true
