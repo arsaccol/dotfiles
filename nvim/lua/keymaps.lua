@@ -35,3 +35,6 @@ vim.keymap.set('n', 'srcv', ':source ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
 vim.keymap.set('n', '<C-c>', ':q <CR>')
+
+vim.keymap.set('n', '<leader>tyod', ':colorscheme tokyonight-day<CR>')
+vim.keymap.set('n', '<leader>tyon', ':colorscheme tokyonight-night<CR>')
